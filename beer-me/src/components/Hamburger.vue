@@ -11,15 +11,9 @@
 <script>
 export default {
     name: 'Hamburger',
-    data() {
-    return {
-      isOpen: true
-    }},
-    methods: {
-      toggle: function(){
-        console.log('I ran!')
-        this.isOpen = !this.isOpen;
-      }
+    props: {
+      toggle: Function,
+      isOpen: Boolean,
     },
 }
 </script>
@@ -89,6 +83,7 @@ export default {
 }
 
 .hamburger-container.open span:nth-child(1) {
+  top: -3px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -101,7 +96,7 @@ export default {
 }
 
 .hamburger-container.open span:nth-child(3) {
-  top: 17px;
+  top: 14px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);

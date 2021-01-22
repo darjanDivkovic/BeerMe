@@ -36,7 +36,7 @@
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
   z-index: 0;
-  border: 0.1px solid #fff;
+  border: 1px solid #F0A700;
 }
 
 #explore-btn span:nth-child(1) {
@@ -125,6 +125,7 @@
 #explore-btn:hover span:nth-child(7),
 #explore-btn:hover span:nth-child(8),
 #explore-btn:hover span:nth-child(9) {
+  border: 1px solid #fff;
   -webkit-transform: scale(9);
           transform: scale(9);
 }

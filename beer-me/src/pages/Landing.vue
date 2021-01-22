@@ -29,7 +29,16 @@
 
 <script>
 export default {
-    name: 'Landing',    
+    name: 'Landing',
+    methods: {
+        fetchBeers(){
+            this.$store.commit('fetchBeers', this.$store)
+        }
+    },
+    beforeMount() {
+        console.log('I rannn!')
+        this.fetchBeers()
+    },
 }
 </script>
 

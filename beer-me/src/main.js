@@ -5,6 +5,9 @@ import VueRouter from 'vue-router'
 import Landing from './pages/Landing'
 import Product from './pages/Products'
 import Products from './pages/Products'
+import { store } from './store'
+
+window.axios = require('axios')
 
 Vue.use(VueRouter)
 
@@ -21,5 +24,6 @@ const router = new VueRouter({
 
 new Vue({
   router,
+  store,
   render: h => h(App),
 }).$mount('#app')
