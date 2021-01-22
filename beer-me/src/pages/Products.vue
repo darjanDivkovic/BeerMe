@@ -26,22 +26,24 @@ export default {
 <style scoped>
 #products-container {
     color: #fff;
-    width: 79%;
+    width: 83%;
     height: 64vh;
     overflow: hidden;
     overflow-y: scroll;
     margin: 0px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-top: 4px solid rgba(10,9,10,0.5);
+    border-bottom: 4px solid rgba(10,9,10,0.5);
 }
 
 #products-container::-webkit-scrollbar {
-  width: 7px;
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
+  background-color: rgba(10,9,10,0.5);
 }
  
 /* Handle */

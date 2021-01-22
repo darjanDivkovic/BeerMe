@@ -3,7 +3,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 
 import Landing from './pages/Landing'
-import Product from './pages/Products'
+import Product from './pages/Product'
 import Products from './pages/Products'
 import { store } from './store'
 
