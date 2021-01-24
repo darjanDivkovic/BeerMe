@@ -36,7 +36,6 @@ export default {
         }
     },
     beforeMount() {
-        console.log('I rannn!')
         this.fetchBeers()
     },
 }
@@ -44,26 +43,6 @@ export default {
 
 <style scoped>
 @import '../styles/button.css';
-#landing-container {
-    color: #fff;
-    width: 75%;
-    margin: 60px auto;
-    display: flex;
-    flex-direction: row;
-}
-#landing-left h1 {
-    font-size: 100px;
-    margin: 0;
-    margin-top: 40px;
-    color: #CE8B2F;
-}
-
-#landing-left p {
-    width: 65%;
-    margin-bottom: 0px;
-    padding-left: 10px;
-    color: #8E8C8D;
-    font-size: 14px;
-}
+@import '../styles/LandingPage.css';
 </style>
 

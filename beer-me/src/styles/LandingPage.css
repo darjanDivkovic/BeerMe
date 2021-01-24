@@ -1,0 +1,179 @@
+#landing-container {
+  margin-top: 40px;
+  width: 75%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#landing-container #landing-left {
+  width: 70%;
+  opacity: 0;
+  -webkit-animation: appearLeft 0.5s forwards;
+          animation: appearLeft 0.5s forwards;
+}
+
+#landing-container #landing-left h1 {
+  font-size: 100px;
+  margin: 0;
+  color: #CE8B2F;
+}
+
+#landing-container #landing-left p {
+  width: 75%;
+  padding: 10px;
+  color: #8E8C8D;
+  font-size: 14px;
+}
+
+#landing-container #landing-right {
+  width: 30%;
+  position: relative;
+}
+
+#landing-container #landing-right span {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  height: 10px;
+  width: 10px;
+  background: #ce8b2f;
+}
+
+#landing-container #landing-right span:nth-child(1) {
+  top: 80px;
+  right: 30%;
+  -webkit-animation: floatUp 1.5s infinite 0.4s;
+          animation: floatUp 1.5s infinite 0.4s;
+}
+
+#landing-container #landing-right span:nth-child(2) {
+  top: 75px;
+  right: 45%;
+  -webkit-animation: floatUp 1.5s infinite 1s;
+          animation: floatUp 1.5s infinite 1s;
+}
+
+#landing-container #landing-right span:nth-child(3) {
+  top: 65px;
+  right: 58%;
+  -webkit-animation: floatUp 1.5s infinite 0.3s;
+          animation: floatUp 1.5s infinite 0.3s;
+}
+
+#landing-container #landing-right span:nth-child(4) {
+  background: #e8c372;
+  height: 5px;
+  width: 5px;
+  top: 65px;
+  right: 50%;
+  -webkit-animation: floatUp 1.5s infinite 0.1s;
+          animation: floatUp 1.5s infinite 0.1s;
+}
+
+#landing-container #landing-right span:nth-child(5) {
+  background: #e8c372;
+  height: 5px;
+  width: 5px;
+  top: 65px;
+  right: 40%;
+  -webkit-animation: floatUp 1.5s infinite 0.5s;
+          animation: floatUp 1.5s infinite 0.5s;
+}
+
+#landing-container #landing-right img {
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: flyIn 0.5s forwards 0.2s;
+          animation: flyIn 0.5s forwards 0.2s;
+}
+
+@-webkit-keyframes floatUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    top: 25px;
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    top: 25px;
+  }
+}
+
+@-webkit-keyframes appearLeft {
+  0% {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes appearLeft {
+  0% {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flyIn {
+  0% {
+    left: 40px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes flyIn {
+  0% {
+    left: 40px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=LandingPage.css.map */

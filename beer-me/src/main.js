@@ -18,7 +18,7 @@ const router = new VueRouter({
     { path : '/',component: Landing },
     { path : '/home',component: Landing },
     { path : '/products', component: Products },
-    { path : '/products/single', component: Product },
+    { path : '/products/single/:id', component: Product, name: 'product' },
   ]
 })
 
