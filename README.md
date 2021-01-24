@@ -9,4 +9,7 @@
    ...A small beer list test project for Io and guys at Pequity
 </h6>
 <h5 align='right'>Created with:</h5>
-<p align='right'>- Figma </p>
+<h6 align='right'>- Figma </h6>
+<h6 align='right'>- Vue ( VueX, Router )</h6>
+<h6 align='right'>- SASS / CSS3 </h6>
+<h6 align='right'>- love</h6>
