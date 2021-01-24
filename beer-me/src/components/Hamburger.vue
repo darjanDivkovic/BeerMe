@@ -1,7 +1,7 @@
 <template>
     <div class="hamburger-container" 
-         v-bind:class="{ open: isOpen }"
-         v-on:click="toggle()">
+         :class="{ open: isOpen }"
+         @click="toggle()">
         <span></span>
         <span></span>
         <span></span>
@@ -26,13 +26,7 @@ export default {
   margin-left: auto;
   margin-right: 50px;
   margin-top: 35px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;  
 }
@@ -46,13 +40,7 @@ export default {
   border-radius: 12px;
   opacity: 1;
   left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;  
 }
 
@@ -60,33 +48,21 @@ export default {
 
 .hamburger-container span:nth-child(1) {
   top: 0px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
   transform-origin: left center;
 }
 
 .hamburger-container span:nth-child(2) {
   top: 7px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
   transform-origin: left center;
 }
 
 .hamburger-container span:nth-child(3) {
   top: 14px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
   transform-origin: left center;
 }
 
 .hamburger-container.open span:nth-child(1) {
   top: -3px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 
@@ -97,9 +73,6 @@ export default {
 
 .hamburger-container.open span:nth-child(3) {
   top: 14px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
 </style>

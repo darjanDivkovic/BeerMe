@@ -22,7 +22,7 @@
         <span></span>
         <span></span>
         <span></span>
-        <img src='../assets/pint.png' id='pint'/>
+        <img src='@/assets/pint.png' id='pint'/>
         </div>
     </div>
 </template>

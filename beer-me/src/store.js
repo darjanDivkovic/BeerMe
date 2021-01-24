@@ -14,47 +14,29 @@ export const store = new Vuex.Store({
         }
     },
     mutations: {
-        fetchBeers() {
+        setBeers(state, data){
+            state.beers = data
+        }
+    },
+    actions: {
+        async fetchBeers(context) {
             console.log('I raq!')
-            axios.get('https://api.punkapi.com/v2/beers?page=1&per_page=80')
-                 .then(res => this.state.beers = res.data.map(beer => {
-                     console.log('beer', beer)
-                     const id = beer.id                     
-                     const name = beer.name
-                     const description = beer.description
-                     const brewersTips = beer.brewers_tips
-                     const tagline = beer.tagline
-                     const firstBrewed = beer.first_brewed
-                     const imageUrl = beer.image_url
-                     const volume = beer.volume
-                     const foodPairings = beer.food_pairing
-                     //console.log('beer:',id, name,tagline, firstBrewed, imageUrl, volume)
-                     return {
+            await axios.get('https://api.punkapi.com/v2/beers?page=1&per_page=80')
+                 .then(res => this.state.beers = res.data.filter(beer => !beer.image_url.includes('keg'))
+                 .map(beer => {
+                     const { 
                          id, 
                          name, 
                          description, 
-                         tagline, 
-                         firstBrewed, 
-                         imageUrl, 
-                         volume, 
-                         foodPairings,
-                         brewersTips,
-                        }
+                         tagline,             
+                         image_url: imageUrl,
+                         food_pairing: foodPairings,
+                         brewers_tips: brewersTips
+                        } = beer
+                
+                    const result = {id, name, description, tagline, imageUrl, foodPairings, brewersTips}
+                    context.commit('setBeers', result)
                     }))
-            /*
-                const beerList = [
-                {id: 1, name: 'Tuzlak'},
-                {id: 2, name: 'Pan'},
-                {id: 3, name: 'Ozujssss'},
-                {id: 1, name: 'Tuzlak'},
-                {id: 2, name: 'Pan'},
-                {id: 3, name: 'Ozujssss'},
-                {id: 1, name: 'Tuzlak'},
-                {id: 2, name: 'Pan'},
-                {id: 3, name: 'Ozujssss'},
-            ];
-            this.state.beers = beerList
-            */
         }
     }
 });

@@ -2,7 +2,7 @@
     <div id="navbar-container">
         <router-link to='/' id="logo"></router-link>
         <div class='links'
-             v-bind:class="{ open: isOpen }">
+             :class="{ open: isOpen }">
            <router-link to='/'>Home</router-link> 
            <router-link to='/products'>Explore</router-link>
         </div>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Hamburger from './Hamburger'
+import Hamburger from '@/components/Hamburger'
 export default {
     name: 'NavBar',
     components: {
@@ -23,7 +23,7 @@ export default {
         }
     },
     methods: {
-        toggle: function(){
+        toggle() {
         this.isOpen = !this.isOpen;
       }
     }

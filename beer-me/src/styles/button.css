@@ -5,24 +5,21 @@
   margin-left: 10px;
   margin-top: 160px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: none;
   padding: 10px 15px;
   overflow: hidden;
   position: relative;
   color: #fff;
   text-decoration: none;
-  border: 4px solid #E8C372;
+  border: 4px solid #e8c372;
   border-radius: 24px;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.6);
-          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   cursor: pointer;
   font-weight: bold;
-  -webkit-transition: 0.4s all;
   transition: 0.4s all;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 #explore-btn span {
@@ -30,13 +27,11 @@
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background-color: #F0A700;
-  -webkit-transition: 0.4s all;
+  background-color: #f0a700;
   transition: 0.4s all;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
   z-index: 0;
-  border: 1px solid #F0A700;
+  border: 1px solid #f0a700;
 }
 
 #explore-btn span:nth-child(1) {
@@ -91,12 +86,11 @@
 
 #explore-btn a {
   all: initial;
-  font-family: Montserrat, 'sans-serif';
+  font-family: Montserrat, "sans-serif";
   font-size: 22px;
   font-weight: 600;
   left: 50;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 8px;
   color: #fff;
   position: absolute;
@@ -104,15 +98,12 @@
   cursor: pointer;
   width: 90%;
   text-align: center;
-  -webkit-transition: 0.4s all;
   transition: 0.4s all;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 #explore-btn:hover {
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(232, 195, 114, 0.8);
-          box-shadow: 0px 5px 20px 0px rgba(232, 195, 114, 0.8);
+  box-shadow: 0px 5px 20px 0px rgba(232, 195, 114, 0.8);
   border: 4px solid #fff;
 }
 
@@ -126,12 +117,11 @@
 #explore-btn:hover span:nth-child(8),
 #explore-btn:hover span:nth-child(9) {
   border: 1px solid #fff;
-  -webkit-transform: scale(9);
-          transform: scale(9);
+  transform: scale(9);
 }
 
 #explore-btn:hover a {
-  color: #1E1C1F;
+  color: #1e1c1f;
 }
 
 #explore-btn:focus {

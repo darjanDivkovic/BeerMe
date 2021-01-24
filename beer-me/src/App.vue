@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import MainWindow from './components/MainWindow'
+import MainWindow from '@/components/MainWindow'
 
 export default {
   name: 'App',

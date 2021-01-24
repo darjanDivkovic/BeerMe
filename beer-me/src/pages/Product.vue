@@ -5,8 +5,8 @@
             <p class='tagline'>{{beer.tagline}}</p>
             <p class='description'>{{beer.description}}</p>
             <div class="product-food-container">
-                <img src='../assets/plate.png' class='food-icon' alt='*'/>
-                <div v-for='pairing in beer.foodPairings' v-bind:key='pairing' class='fp-container'>
+                <img src='@/assets/plate.png' class='food-icon' alt='*'/>
+                <div v-for='pairing in beer.foodPairings' :key='pairing' class='fp-container'>
                     <p class="food-pairing">{{pairing}}</p>
                 </div>
             </div>
@@ -18,7 +18,7 @@
             <div id='product-lowerSection'>
             <p>"{{beer.brewersTips}}"</p>
         </div>
-       <img src='../assets/beerman-final.png' class="beerman">
+       <img src='@/assets/beerman-final.png' class="beerman">
     </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <div id='products-container'>
-        <div v-for='beer in beers' v-bind:key="beer.id">
+        <div v-for='beer in beers' :key="beer.id">
             <SingleBeer 
                         :id='beer.id'
                         :name='beer.name' 
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SingleBeer from '../components/SingleBeer'
+import SingleBeer from '@/components/SingleBeer'
 export default {
     name: 'Products',
     computed: {
