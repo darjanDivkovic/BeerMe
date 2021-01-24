@@ -11,6 +11,9 @@
                 </div>
             </div>
              <img :src='beer.imageUrl' class='large-image' alt='*'/>
+             <router-link to='/products' class='arrow'>
+             ⬅
+             </router-link>
             </div>
             <div id='product-lowerSection'>
             <p>"{{beer.brewersTips}}"</p>

@@ -1,6 +1,6 @@
 <template>
     <div id="navbar-container">
-        <img src='../assets/logo.png' id='logo'/>
+        <router-link to='/' id="logo"></router-link>
         <div class='links'
              v-bind:class="{ open: isOpen }">
            <router-link to='/'>Home</router-link> 
@@ -19,12 +19,11 @@ export default {
     },
     data() {
         return {
-            isOpen: false,
+            isOpen: true,
         }
     },
     methods: {
         toggle: function(){
-        console.log('I ran!')
         this.isOpen = !this.isOpen;
       }
     }
@@ -43,7 +42,15 @@ export default {
 
 #logo {
     height: 50px;
+    width: 50px;
     margin-left: 50px;
+    background-image: url('../assets/logo.png');
+    background-size: contain;
+    transition: 0.35s all;
+}
+
+#logo:hover {
+    transform: rotate(30deg);
 }
 
 .links {

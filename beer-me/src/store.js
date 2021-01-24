@@ -11,12 +11,6 @@ export const store = new Vuex.Store({
     getters: {
         getSingleBeer(state) {
             return id => state.beers.filter( beer => beer.id === id )[0]
-            
-            //console.log('id:',id)
-            //console.log('state', state)
-            //console.log('hey')
-            //return { name: 'dace', id: 'macec'}
-            //return store.state.beers.filter( beer => beer.id === id )[0] || {}
         }
     },
     mutations: {
