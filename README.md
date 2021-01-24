@@ -5,6 +5,6 @@
 <h1 align='right'>
    Beer me
 </h1>
-<h3 align='right'>
+<h3 align='right' marginTop='-30px'>
    A small beer list test project for Io and guys at Pequity
-</h2
+</h3>
