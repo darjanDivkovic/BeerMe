@@ -2,6 +2,9 @@
   <img width="182" height="231" src="./beer-me/src/assets/pint.png">
 </p>
 
-<h4 align='right'>
+<h1 align='right'>
    Beer me
-</h4>
+</h1>
+<h3 align='right'>
+   A small beer list test project for Io and guys at Pequity
+</h2
