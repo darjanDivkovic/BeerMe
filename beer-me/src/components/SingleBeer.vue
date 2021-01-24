@@ -68,7 +68,8 @@ export default {
     bottom: 0;
     right: 7px;
     font-size: 15px;
-    padding-left: 7px;
+    padding-left: 6px;
+    padding-right: 7px;
     z-index: 2;
     color: #CE8B2F;
 }
@@ -134,26 +135,28 @@ export default {
 .single-beer-container:hover img {
     height: 150px;
     margin-top: -20px;
-    filter:brightness(1.2) contrast(0.9);
+    filter:brightness(1.2) contrast(1);
+    z-index: 4;
 }
 
 .single-beer-container:hover .link {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.4;
 }
 
 .link {
     z-index: 4;
     position: absolute;
-    top: 120px;
     left: 50%;
-    transform: translateX(-50%) rotate(-10deg);
+    height: 100%;
+    transform: translateX(-50%);
     font-weight: bold;
+    padding: ;
     overflow: hidden;
     color: #fff;
     background-color: rgba(232, 195, 114, 0.4);
     text-decoration: none;
-    padding: 15px 0;
+    padding: 130px 0;
     width: 200%;
     letter-spacing: 6px;
     text-align: center;

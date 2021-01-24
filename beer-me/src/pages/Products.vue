@@ -12,12 +12,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import SingleBeer from '@/components/SingleBeer'
+
 export default {
     name: 'Products',
     computed: {
+        ...mapGetters(['getBeers']),
         beers() {
-            return this.$store.state.beers;
+            return this.getBeers;
         }
     },
     components: {

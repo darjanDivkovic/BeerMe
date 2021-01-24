@@ -28,15 +28,14 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
     name: 'Landing',
     methods: {
-        fetchBeers(){
-            this.$store.commit('fetchBeers', this.$store)
-        }
+        ...mapActions(['fetchBeers']),
     },
     beforeMount() {
-        this.fetchBeers()
+    this.fetchBeers()
     },
 }
 </script>
