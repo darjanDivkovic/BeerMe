@@ -2,6 +2,6 @@
   <img width="182" height="231" src="./beer-me/src/assets/pint.png">
 </p>
 
-# Beer me
-<hr/>
-  A small test project for guys at Pequity
+<p align='right'>
+   Beer me
+</p>
