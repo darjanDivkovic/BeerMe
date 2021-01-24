@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" position='absolute'>
   <img width="182" height="231" src="./beer-me/src/assets/pint.png">
 </p>
 
