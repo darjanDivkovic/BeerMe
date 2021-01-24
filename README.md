@@ -6,5 +6,5 @@
    Beer me
 </h1>
 <h6 align='right' marginTop='-30px'>
-   A small beer list test project for Io and guys at Pequity
+   ...A small beer list test project for Io and guys at Pequity
 </h6>
