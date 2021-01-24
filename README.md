@@ -1,5 +1,5 @@
 <p>
-  <img width="182" height="231" src="./beer-me/src/assets/pint.png">
+  <img width="182" height="231" src="./beer-me/src/assets/pint.png" float='right'>
 </p>
 
 <h1>
