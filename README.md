@@ -3,5 +3,5 @@
 </p>
 
 # Beer me
----
-## A small test project for guys at Pequity
+<hr/>
+  A small test project for guys at Pequity
