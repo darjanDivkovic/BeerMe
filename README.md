@@ -12,4 +12,4 @@
 <h6>- Figma </h6>
 <h6>- Vue ( VueX, Router )</h6>
 <h6>- SASS / CSS3 </h6>
-<h6>- love</h6>
+<h6>:heart: Love</h6>
