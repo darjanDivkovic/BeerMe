@@ -1,5 +1,5 @@
 <p>
-  <img width="182" height="231" src="./beer-me/src/assets/pint.png" float='right'>
+  <img width="182" height="231" src="./beer-me/src/assets/pint.png" align='center'>
 </p>
 <h6>
    ...A small beer list test project for Io and guys at Pequity
