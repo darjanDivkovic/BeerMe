@@ -23,7 +23,6 @@ export const store = new Vuex.Store({
     },
     actions: {
         async fetchBeers(context) {
-            console.log('I raq!')
             await axios.get('https://api.punkapi.com/v2/beers?page=1&per_page=80')
                  .then(res => {
                  const result = res.data.filter(beer => !beer.image_url.includes('keg'))

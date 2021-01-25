@@ -151,7 +151,6 @@ export default {
     height: 100%;
     transform: translateX(-50%);
     font-weight: bold;
-    padding: ;
     overflow: hidden;
     color: #fff;
     background-color: rgba(232, 195, 114, 0.4);
